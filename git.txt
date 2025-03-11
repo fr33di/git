@@ -45,3 +45,24 @@ git config --global credential.helper store
 ####------>>>>>cat ~/.git-credentials
 ### para que git ya no guarde passwords ###
 git config --global --unset credential.helper
+
+
+
+###### Para crear un repositorio desde git ######
+
+
+
+pkg install gh
+
+gh auth login
+
+gh repo create <mi-proyecto> --public
+
+## --private o --public ##
+
+
+
+git remote add origin https://github.com/usuario/<mi-proyecto.git>
+
+git branch -M main
+git push -u origin main

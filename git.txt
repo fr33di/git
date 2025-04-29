@@ -39,6 +39,9 @@ git merge <branchOrigen> <branchDestino>
 git push -u origin <main>
 git pull origin <branch>
 
+#para traer cambios si hay modificaciones desde github
+git pull --rebase origin main
+
 ###### para guardar contraseña ######
 git config --global credential.helper store
 

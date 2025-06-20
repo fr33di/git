@@ -10,9 +10,15 @@ git init
 ```
 git config --global user.name <name>
 ```
+```
 git config --global user.email <email>
-`git config --global user.password <key>`
+```
+```
+git config --global user.password <key>
+```
+```
 git remote add origin <https>
+```
 
 ### Comandos para ver, registrar commits ###
 

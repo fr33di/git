@@ -6,7 +6,7 @@ A quick reference of useful Git commands for initializing repositories, managing
 
 ## 📁 Initialize a Local Repository
 
-```bash
+```
 git init
 ```
 
@@ -32,15 +32,37 @@ git remote add origin https://github.com/user/repo.git
 
 ## ✅ Check Status and Commit Changes
 
-```bash
-git clone https://github.com/user/repo.git
-git status
-git add .             # Add all new/modified files
-git add -u            # Add only modified/deleted files
-git add -A            # Add all changes (new, modified, deleted)
-git commit -m "My first commit"
-git log               # View commit history
 ```
+git clone https://github.com/user/repo.git
+```
+
+```
+git status
+```
+
+```
+git add .  
+```
+Add all new/modified files
+
+```
+git add -u
+```
+
+Add only modified/deleted files
+```
+git add -A
+```
+
+Add all changes (new, modified, deleted)
+
+```
+git commit -m "My first commit"
+```
+```
+git log
+```
+View commit history
 
 ---
 

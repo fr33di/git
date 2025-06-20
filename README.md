@@ -1,5 +1,5 @@
 ---
-#Ubicar en la ruta
+# Ubicar en la ruta
 
 git init
 

@@ -20,23 +20,39 @@ git config --global user.password <key>
 git remote add origin <https>
 ```
 
-### Comandos para ver, registrar commits ###
-
+## Comandos para ver, registrar commits
+```
 git clone <http>
+```
+```
 git status
-
+```
+```
 git add .
+```
+```
 git add -u
+```
+```
 git add -A
-
+```
+```
 git commit -m <"mi primer commit">
+```
+```
 git log
+```
 
-##### Branchs #####
-
+## Branchs
+```
 git branch <rama>
+```
+```
 git branch -m <name>  <newName>
+```
+```
 git switch <rama>
+```
 git switch -c <rama>
 git checkout <branch>
 git checkout <hashCommit>

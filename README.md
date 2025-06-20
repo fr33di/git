@@ -1,11 +1,12 @@
 ---
 # Comandos para GIT
+---
 ## Ubicar en la ruta
 ```
 git init
 ```
-
-####### Configuracion de la cuenta ######
+---
+## Configuracion de la cuenta
 
 git config --global user.name <name>
 git config --global user.email <email>

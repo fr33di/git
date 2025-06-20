@@ -1,8 +1,7 @@
 ---
 # Comandos para GIT
 ## Ubicar en la ruta
-
-git init
+`git init`
 
 ####### Configuracion de la cuenta ######
 

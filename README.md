@@ -1,5 +1,6 @@
 ---
-# Ubicar en la ruta
+# Comandos para GIT
+## Ubicar en la ruta
 
 git init
 

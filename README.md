@@ -14,10 +14,17 @@ git init
 
 ## 👤 Configure Git User
 
-```bash
+```
 git config --global user.name "YourName"
+```
+```
 git config --global user.email "youremail@example.com"
-git config --global user.password "your_password"      # ⚠️ Not recommended
+```
+```
+git config --global user.password "your_password"
+```
+⚠️ Not recommended
+```
 git remote add origin https://github.com/user/repo.git
 ```
 

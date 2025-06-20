@@ -87,6 +87,13 @@ git remote add origin https://github.com/user/my-project.git
 git branch -M main
 git push -u origin main
 ```
+## Restore to a Previous Commit
+
+To restore the project to a previous stable state, use the following command:
+
+```bash
+git reset --hard <commit-hash>
+git push origin main --force
 
 ---
 

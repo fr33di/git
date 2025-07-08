@@ -130,5 +130,6 @@ git push origin main --force
 
 git config --global --add safe.directory /ruta
 
+---
 
 📌 *Keep this as a cheat sheet for day-to-day Git usage. Modify the URLs, names, and branches to fit your own project.*

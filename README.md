@@ -125,6 +125,7 @@ git reset --hard <commit-hash>
 git push origin main --force
 
 ---
+
 ## Add directory segure
 
 git config --global --add safe.directory /ruta

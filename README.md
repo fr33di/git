@@ -68,8 +68,12 @@ View commit history
 
 ## 🌿 Branch Management
 
-```bash
-git branch new-branch                  # Create a new branch
+Create a new branch
+```
+git branch new-branch
+```
+
+```
 git branch -m old-name new-name        # Rename a branch
 git switch branch-name                 # Switch to a branch
 git switch -c new-branch               # Create and switch to a new branch

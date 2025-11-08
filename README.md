@@ -43,7 +43,8 @@ Add all new and modified files to the staging area
 git add .
 ```
 
-Add only modified and deleted files to the staging area```
+Add only modified and deleted files to the staging area
+```
 git add -u
 ```
 Add all changes (new, modified, and deleted files) to the staging area
@@ -56,11 +57,10 @@ Commit the staged changes with a descriptive messag
 git commit -m "My first commit"
 ```
 
-
 View the commit history of the repository
 ```
 git log
-```h
+```
 ---
 
 ## 🌿 Branch Management
@@ -120,6 +120,7 @@ git branch -v
 ---
 
 ## 🔀 GitHub and Remote Operations
+
 Show differences between two branches
 ```
 git diff branch1 branch2

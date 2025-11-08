@@ -38,20 +38,17 @@ Check the current status of your repositor
 ```
 git status
 ```
-
-Add all new and modified files to the staging are
+Add all new and modified files to the staging area
 ```
 git add .
 ```
 
-Add only modified and deleted files to the staging area
+Add only modified and deleted files to the staging area```
+git add -u
 ```
-git add -
+Add all changes (new, modified, and deleted files) to the staging area
 ```
-
-Add all changes (new, modified, and deleted files) to the staging are
-```
-git add -
+git add -A
 ```
 
 Commit the staged changes with a descriptive messag
@@ -63,7 +60,7 @@ git commit -m "My first commit"
 View the commit history of the repository
 ```
 git log
-```
+```h
 ---
 
 ## 🌿 Branch Management
@@ -123,54 +120,93 @@ git branch -v
 ---
 
 ## 🔀 GitHub and Remote Operations
+Show differences between two branches
+```
+git diff branch1 branch2
+```
 
-```bash
-git diff branch1 branch2              # Show differences between branches
-git merge branch-name                 # Merge branch into current
-git push -u origin main               # Push to remote main
-git pull origin branch-name           # Pull from remote branch
-git pull --rebase origin main         # Rebase changes from remote
+Merge a branch into the current branch
+```
+git merge branch-name
+```
+
+Push the current branch to the remote 'main' and set upstream
+```
+git push -u origin main
+```
+
+Pull changes from a remote branch
+```
+git pull origin branch-name
+```
+
+Rebase current branch with changes from remote 'main'
+```
+git pull --rebase origin main
 ```
 
 ---
 
 ### 🔐 Credential Management
 
-```bash
-git config --global credential.helper store       # Save credentials
-git config --global --unset credential.helper     # Stop saving credentials
+Save credentials globally so you don't have to enter them every time
 ```
-
+git config --global credential.helper store
+```
+Stop saving credentials globally
+```
+git config --global --unset credential.helper
+```
 ---
 
 ## 🚀 Create and Link GitHub Repo (Using GitHub CLI)
 
-```bash
-pkg install gh                         # Install GitHub CLI (e.g., in Termux)
-gh auth login                          # Authenticate with GitHub
+Install GitHub CLI (example for Termux or similar environments)
+```
+pkg install gh
+```
 
-# Create a new GitHub repository
-gh repo create my-project --public     # Use --private if preferred
+Authenticate with GitHub
+```
+gh auth login
+```
 
-# Link to remote and push
+Create a new GitHub repository (Use --private if you want a private repo)
+```
+gh repo create my-project --public
+```
+
+Link local repository to remote and push
+```
 git remote add origin https://github.com/user/my-project.git
+```
+```
 git branch -M main
+```
+```
 git push -u origin main
 ```
+
+
 ## Restore to a Previous Commit
 
 To restore the project to a previous stable state, use the following command:
 
-```bash
+Reset the current branch to a specific commit, discarding all local changes
+```
 git reset --hard <commit-hash>
-git push origin main --force
+```
 
+Force push the current branch to the remote 'main'
+```
+git push origin main --force
+```
 ---
 
 ## Add directory segure
 
-git config --global --add safe.directory /ruta
-
+Mark a directory as "safe" for Git operations globally
+```
+git config --global --add safe.directory /path/to/directory
+```
 ---
-
-📌 *Keep this as a cheat sheet for day-to-day Git usage. Modify the URLs, names, and branches to fit your own project.*

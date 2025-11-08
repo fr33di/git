@@ -6,6 +6,8 @@ A quick reference of useful Git commands for initializing repositories, managing
 
 ## 📁 Initialize a Local Repository
 
+Initializes a new Git repository in the current folder
+
 ```
 git init
 ```
@@ -14,75 +16,110 @@ git init
 
 ## 👤 Configure Git User
 
+Sets your global Git username
 ```
 git config --global user.name "YourName"
 ```
+Sets your global Git email
 ```
 git config --global user.email "youremail@example.com"
-```
-```
-git config --global user.password "your_password"
-```
-⚠️ Not recommended
-```
-git remote add origin https://github.com/user/repo.git
 ```
 
 ---
 
 ## ✅ Check Status and Commit Changes
 
+Clone a remote repository from GitHub to your local machin
 ```
 git clone https://github.com/user/repo.git
 ```
 
+Check the current status of your repositor
 ```
 git status
 ```
 
+Add all new and modified files to the staging are
 ```
-git add .  
-```
-Add all new/modified files
-
-```
-git add -u
+git add .
 ```
 
-Add only modified/deleted files
+Add only modified and deleted files to the staging area
 ```
-git add -A
+git add -
 ```
 
-Add all changes (new, modified, deleted)
+Add all changes (new, modified, and deleted files) to the staging are
+```
+git add -
+```
 
+Commit the staged changes with a descriptive messag
 ```
 git commit -m "My first commit"
 ```
+
+
+View the commit history of the repository
 ```
 git log
 ```
-View commit history
-
 ---
 
 ## 🌿 Branch Management
-
-Create a new branch
+Create a new branch (does not switch)
 ```
 git branch new-branch
 ```
-
+Rename a branch
 ```
-git branch -m old-name new-name        # Rename a branch
-git switch branch-name                 # Switch to a branch
-git switch -c new-branch               # Create and switch to a new branch
-git checkout branch-name               # Alternate way to switch
-git checkout <commit-hash>            # Go to a specific commit
-git branch -d branch-name              # Delete a branch (safe)
-git branch -D branch-name              # Force delete a branch
+git branch -m old-name new-name
 ```
 
+Switch to another branch
+```
+git switch branch-name
+```
+
+Create and switch to a new branch
+```
+git switch -c new-branch
+```
+
+Switch to another branch (older syntax)
+```
+git checkout branch-name
+```
+
+Go to a specific commit (detached HEAD)
+```
+git checkout <commit-hash>
+```
+
+Delete a branch safely (merged)
+```
+git branch -d branch-name
+```
+
+Force delete a branch
+```
+git branch -D branch-name
+```
+
+List local branches
+```
+git branch
+```
+
+List local and remote branches
+```
+git branch -a
+```
+
+Show last commit of each branch
+```
+git branch -v
+```
 ---
 
 ## 🔀 GitHub and Remote Operations

@@ -24,7 +24,10 @@ Sets your global Git email
 ```
 git config --global user.email "youremail@example.com"
 ```
-
+Set your Git Repo
+```
+git remote set-url origin https://github.com/user/repo.git
+```
 ---
 
 ## ✅ Check Status and Commit Changes

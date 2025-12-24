@@ -28,6 +28,12 @@ Set your Git Repo
 ```
 git remote set-url origin https://github.com/user/repo.git
 ```
+
+```
+git remote get-url origin
+```
+
+
 ---
 
 ## ✅ Check Status and Commit Changes
